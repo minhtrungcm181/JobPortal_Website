@@ -8,7 +8,7 @@
        <title>Job Seeker Registration</title>
        <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
        <!-- <link href="/css/main.css" rel="stylesheet"> -->
-       <link href="/css/js_signup.css" rel="stylesheet">
+       <link href="css/signup_js.css" rel="stylesheet">
        <script type="text/javascript" src="../js/validate.js"></script>
        <script src="../js/jquery-1.12.0.min.js"></script>
        <script src="../js/bootstrap.min.js"></script>
@@ -43,19 +43,7 @@
            }
        </script>
    </head>
-
    <body>
-
-       <nav class="navbar" id="insidenav">
-           <div class="container-fluid">
-               <div class="navbar-header">
-                   <a class="navbar-brand" href="../index.php">Job Portal</a>
-               </div>
-               <ul class="nav navbar-nav navbar-right">
-                   <li></li>
-               </ul>
-           </div>
-       </nav>
 
        <div class="signup-modal">
            <form id="reguser" onsubmit="return checkForm()" METHOD="post" ACTION="process_user.php" enctype="multipart/form-data">

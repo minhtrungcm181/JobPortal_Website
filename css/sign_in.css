@@ -2,7 +2,12 @@ body {
   padding-bottom: 40px;
   background: url("paper.png");
 }
-
+footer{
+  display: none;
+}
+nav ul.nav{
+  display: none;
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -36,21 +41,6 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-#insidenav{
-  background: deepskyblue;
-  color: whitesmoke;
-  font-size: 13px;
-
-}
-nav a{
-  font-size: 16px;
-  font-family: ubuntu;
-  color:white;
-}
-nav ul li {
-  font-size: 16px;
-  font-family: ubuntu;
 }
 li.active{
   background: #5bc0de;

@@ -1,44 +1,40 @@
-#insidenav{
-    background: dodgerblue;
-    color: white;
-    font-size: 13px;
+footer {
+    display: none;
 }
-nav a{
-    font-size: 16px;
-    font-family: ubuntu;
-    color: white;
+
+nav ul.nav {
+    display: none;
 }
-nav ul li {
-    font-size: 16px;
-    font-family: ubuntu;
-}
-nav ul  li.active{
-    background: #428bca;
-}
-table.table{
+
+table.table {
     background: transparent;
 }
-td.tbold{
+
+td.tbold {
     font-weight: bold;
     width: 200px;
 }
-table{
+
+table {
     background: transparent;
-     font-size: 16px;
+    font-size: 16px;
 }
-label{
+
+label {
     width: inherit;
     background: transparent;
 }
-div.jumbotron{
+
+div.jumbotron {
     color: #2aabd2;
 }
+
 .thumbnail {
     width: auto;
     height: auto;
     border: none;
     border-radius: 0;
-   background: transparent;
+    background: transparent;
 
 }
 
@@ -48,7 +44,8 @@ div.jumbotron{
     height: 300;
     margin-bottom: 5px;
 }
-.signup-modal{
+
+.signup-modal {
     background-color: #fff;
     border: 1px solid #e3e3e3;
     border-radius: 16px;
@@ -61,7 +58,8 @@ div.jumbotron{
     text-align: left;
     width: 30%;
 }
+
 body {
     padding-bottom: 40px;
     background: url("paper.png");
-  }
+}

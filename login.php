@@ -55,14 +55,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       }
       ?>
   </head>
-
-<nav class="navbar" id="insidenav">
-  <div class="container-fluid">
-    <div class="navbar-header">  
-    <a class="navbar-brand" href="index.php">Job Portal</a>
-    </div>
-  </div>
-</nav>
   <body>
     <div class="login-modal">
         <form class="form-signin" action="process_login.php" method="post">

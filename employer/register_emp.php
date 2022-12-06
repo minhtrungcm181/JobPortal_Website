@@ -50,20 +50,6 @@ else {
 </head>
 <body>
 
-<!-- navigation bar starts here -->
-<nav class="navbar" id="insidenav">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../index.php">Job Portal</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Employer Registration</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="../login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
 
 <!-- navigation bar ends here -->
 
@@ -259,7 +245,7 @@ else {
    <div class="form-group form-inline col-sm-10">
    <label for="reg" class="control-label col-sm-5">Check for errors before submitting the form!</label>
     <button class="btn btn-success" type="submit"  id="reg">Register</button>
-    <label for"reset" class="control-label"> </label>
+    <label for="reset" class="control-label"> </label>
      <button class="btn btn-danger" type="reset" id="reset"> Reset </button>
 </div>
 </form>
@@ -270,6 +256,5 @@ else {
 <link href="../css/employer.css" rel="stylesheet">
 <script src="../js/jquery-1.12.0.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../location/location.js"></script>
 </body>
 </html>
