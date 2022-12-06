@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 $host = "localhost";
 $user  = "root";
-$password =  "sreelal";
+$password =  "";
 $database1 = "jobportal";
 $database2 = "location";
 $db1 = new mysqli($host, $user, $password, $database1);

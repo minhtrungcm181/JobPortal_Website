@@ -3,7 +3,12 @@
     color: white;
     font-size: 13px;
 }
-
+footer{
+    display: none;
+  }
+  nav ul.nav{
+    display: none;
+  }
 nav a{
     font-size: 16px;
     font-family: ubuntu;
