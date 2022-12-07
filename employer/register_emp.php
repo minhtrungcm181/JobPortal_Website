@@ -5,48 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> NEW CLIENT REGISTRATION </title>
-
- <script type="text/javascript" src="/job_portal/js/validate.js"></script>
-         <script>
-             function checkForm() {
-// Fetching values from all input fields and storing them in variables.
-var email = document.getElementById("emailerror").innerHTML;
-var pass1 = document.getElementById("pass1error").innerHTML;
-var pass2 = document.getElementById("pass2error").innerHTML;
-var compname = document.getElementById("comperror").innerHTML;
-var addr = document.getElementById("addrerror").innerHTML;
-var pincode = document.getElementById("pinerror").innerHTML;
-var person = document.getElementById("personerror").innerHTML;
-var phone = document.getElementById("pherror").innerHTML;
-                 var about=document.getElementById("abouterror").innerHTML;
-//alert(email + pass1 + pass2 + compname + addr + pincode + person + phone);
-//Check input Fields Should not be blanks.
-//validateRadio("comtype","typeerror");
-var p1=document.getElementById("pass1").value;
-var p2=document.getElementById("pass2").value;
-    if (p1 != p2) {
-        document.getElementById("pass2error").innerHTML="Password Donot Match" ;
-    }
-    else
-    {
-        document.getElementById("pass2error").innerHTML="" ;
-
-    }
-
-if(email == "" && pass1 == "" && pass2 == "" &&  compname == "" && addr == "" && pincode == "" && person == "" && phone == "" && about == "") {
-
-   //document.getElementById("regcomp").submit();
-    return true;
-    }
-
-else {
-
-    alert("Fill in with correct information");
-    return false;
-      }
-
-}
- </script>
+<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+<link href="/css/signup.css" rel="stylesheet">
+<link href="/css/employer.css" rel="stylesheet">
 </head>
 <body>
 
@@ -64,6 +25,7 @@ else {
         </p>
         </div>
     </div>
+<div class="signup-modal">
 <form role="form" id="regcomp" onsubmit="return checkForm()" class="form-horizontal" method="post" action="process_regemp.php">
 <h3 class="h3style"> Your Login details </h3>
 <div class="page-header"> </div>
@@ -250,11 +212,48 @@ else {
 </div>
 </form>
 </div>
-<div class="page-header"> </div>
-<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-<link href="../css/main.css" rel="stylesheet">
-<link href="../css/employer.css" rel="stylesheet">
+</body>
 <script src="../js/jquery-1.12.0.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-</body>
+<script type="text/javascript" src="/job_portal/js/validate.js"></script>
+         <script>
+             function checkForm() {
+// Fetching values from all input fields and storing them in variables.
+var email = document.getElementById("emailerror").innerHTML;
+var pass1 = document.getElementById("pass1error").innerHTML;
+var pass2 = document.getElementById("pass2error").innerHTML;
+var compname = document.getElementById("comperror").innerHTML;
+var addr = document.getElementById("addrerror").innerHTML;
+var pincode = document.getElementById("pinerror").innerHTML;
+var person = document.getElementById("personerror").innerHTML;
+var phone = document.getElementById("pherror").innerHTML;
+                 var about=document.getElementById("abouterror").innerHTML;
+//alert(email + pass1 + pass2 + compname + addr + pincode + person + phone);
+//Check input Fields Should not be blanks.
+//validateRadio("comtype","typeerror");
+var p1=document.getElementById("pass1").value;
+var p2=document.getElementById("pass2").value;
+    if (p1 != p2) {
+        document.getElementById("pass2error").innerHTML="Password Donot Match" ;
+    }
+    else
+    {
+        document.getElementById("pass2error").innerHTML="" ;
+
+    }
+
+if(email == "" && pass1 == "" && pass2 == "" &&  compname == "" && addr == "" && pincode == "" && person == "" && phone == "" && about == "") {
+
+   //document.getElementById("regcomp").submit();
+    return true;
+    }
+
+else {
+
+    alert("Fill in with correct information");
+    return false;
+      }
+
+}
+ </script>
 </html>
