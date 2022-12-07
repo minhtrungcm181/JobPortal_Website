@@ -1,43 +1,29 @@
 
+
 .navbar{
-    background: rgb(9, 21, 17);
+    background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+    background-image: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
     margin-bottom: 0px!important;
 }
+/* footer{
+    background: #001744;
+    color: #b3ceff;
+    position: absolute;
+
+} */
 nav a{
     font-size: 16px;
     font-family: ubuntu;
     color: white;
 }
-nav ul li {
+nav li {
     font-size: 16px;
     font-family: ubuntu;
 }
 li.active{
     background: #f4511e ;
 }
-#subcontent{
-    background: lavender;
-    color: black;
-    font-size: 13px;
-}
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-}
-div.bmsTop{
-    list-style-type: none;
-    display: block;
-    background:transparent;
-    padding: 10px 8px 8px;
-    margin-bottom: 10px;
-
-}
-div.bmsTop ul li{
-    display: inline;
-    overflow: hidden;
-}
-.panel {
+/* .panel {
     border: 1px solid #f4511e;
     border-radius:0;
     transition: box-shadow 0.5s;
@@ -81,7 +67,7 @@ div.bmsTop ul li{
     margin: 15px 0;
     background-color: #f4511e;
     color: #fff;
-}
+} */
 body{
     padding-bottom: 40px;
     color: #5a5a5a;

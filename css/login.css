@@ -1,0 +1,43 @@
+body {
+  padding-bottom: 40px;
+  background: url("paper.png");
+}
+.navbar{
+  background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+  background-image: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+  margin-bottom: 0px!important;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.login-modal{
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  box-sizing: border-box;
+  font-family: Source Sans Pro;
+  margin: auto;
+  margin-top: 200px;
+  padding: 48px;
+  position: relative;
+  text-align: left;
+  width: 30%;
+}
