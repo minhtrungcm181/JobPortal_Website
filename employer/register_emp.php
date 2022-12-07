@@ -6,33 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> NEW CLIENT REGISTRATION </title>
 <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-<link href="/css/signup.css" rel="stylesheet">
 <link href="/css/employer.css" rel="stylesheet">
 </head>
 <body>
-
-
-<!-- navigation bar ends here -->
-
-<!-- container div for page contents -->
-<div class="container">
-    <div class="jumbotron">
-       <h1>Register your company</h1>
-        <div id="insidejumb">
-        <p>
-            Register today and post a job in easy steps and start receiving applications the same day.
-            Find the right candidates easily and quickly through our Search feature.
-        </p>
-        </div>
-    </div>
+<nav class="navbar"> 
+        <ul class="nav navbar-nav">
+        <li><a href="/?page=home"><img src="/images/logo_nav.png" alt="home" style="height:20px;"></a></li>
+        </ul>
+   </nav>
 <div class="signup-modal">
 <form role="form" id="regcomp" onsubmit="return checkForm()" class="form-horizontal" method="post" action="process_regemp.php">
-<h3 class="h3style"> Your Login details </h3>
-<div class="page-header"> </div>
-    
+<h1> Sign up</h1>
+<hr>
+<h3>Contact:</h3>
+<br>
 <div class="form-group">
     <label for="email" class="control-label col-sm-2">E-mail:</label>
-    <div class="col-sm-4">
+    <div class="col-sm-9">
        <input type="email" required placeholder="Enter your email" class="form-control" name="email" id="email"
           onblur="validate('email','emailerror',this.value)">
     </div>
@@ -41,7 +31,7 @@
 
 <div class="form-group">
     <label class="control-label col-sm-2" for="pass1">Password:</label>
-    <div class="col-sm-4">  
+    <div class="col-sm-9">  
         <input type ="password"  placeholder="Enter your password" name="pass1" id="pass1" class="form-control"
                required onblur="validate('password','pass1error',this.value)">
     </div>
@@ -49,20 +39,18 @@
 </div>
 
 <div class="form-group">
-    <label for="pass2" class="control-label col-sm-2"> Confrim Password: </label>
-    <div class="col-sm-4">
+    <label for="pass2" class="control-label col-sm-2"> Confirm Password: </label>
+    <div class="col-sm-9">
         <input type ="password"  placeholder="Confirm your password" name="pass2" id="pass2" class="form-control" required>
     </div>
     <label class="error" id="pass2error"></label>
 </div>
-
-<div class="page-header"></div>
-<h3 class="h3style"> Your Company Details</h3>
-<div class="page-header"></div>
-
+<hr>
+<h3>Company:</h3>
+<br>
 <div class="form-group">
   <label class="control-label col-sm-2"> Company Name:</label>
-    <div class="col-sm-5"> 
+    <div class="col-sm-9"> 
       <input type ="text" class="form-control" name="compname" id="compname" placeholder="Enter Company Name"
              required onblur="validate('company','comperror',this.value)">
    </div>
@@ -72,7 +60,7 @@
 
 <div class="form-group">
    <label class="control-label col-sm-2" for="comtype"> Company Type: </label>
-    <div class="col-sm-4 form-inline" id="comtype">
+    <div class="col-sm-6 form-inline" id="comtype">
         <label class="radio-inline"><input type="radio" name="comtype" id="type1" value="Company">Company</label>
         <label class="radio-inline"><input type="radio" name="comtype" id="type2" value="Consultant">Consultant</label>
     </div>
@@ -81,7 +69,7 @@
 
  <div class="form-group">
                 <label for="indtype" class="control-label col-sm-2">Industry:</label>
-                <div class="col-sm-4"> 
+                <div class="col-sm-9"> 
                     <select name="indtype" id="indtype" class="form-control"  required>
                     <option selected="selected" value="">- Select an Industry -</option>
                     <option value="Accessories/Apparel/Fashion Design">Accessories/Apparel/Fashion Design</option>
@@ -147,7 +135,7 @@
 
 <div class="form-group">
     <label for="addr" class="control-label col-sm-2">Address:</label>
-      <div class="col-sm-5"><textarea id="addr" rows="5" name="addr" class="form-control" required 
+      <div class="col-sm-9"><textarea id="addr" rows="5" name="addr" class="form-control" required 
           onblur="validate('address','addrerror',this.value)"></textarea>
     </div>
       <label class="error" id="addrerror"></label>
@@ -155,7 +143,7 @@
 
 <div class="form-group">
       <label for="pincode" class="control-label col-sm-2">Pincode:</label>
-       <div class="col-sm-4">
+       <div class="col-sm-9">
           <input type ="text" class="form-control" placeholder="Enter the pincode" name="pin_code" id="pincode"
                  required onblur="validate('pincode','pinerror',this.value)">
        </div>
@@ -164,7 +152,7 @@
 
 <div class="form-group">
         <label class="control-label col-sm-2" for="person">Contact Person:</label>
-        <div class="col-sm-4">
+        <div class="col-sm-9">
           <input type="text"class="form-control" placeholder="Enter Executive Name" id="person" name="person"
                  required onblur="validate('username','personerror',this.value)">
           <label class="error" id="personerror"></label>
@@ -173,7 +161,7 @@
 
 <div class="form-group">
         <label class="control-label col-sm-2" for="phone">Contact Number:</label>
-        <div class="col-sm-4">
+        <div class="col-sm-9">
           <input type="text"class="form-control" placeholder="Enter Contact Number" id="phone" name="phone"
                  required onblur="validate('mobilenum','pherror',this.value)">
           <label class="error" id="pherror"></label>
@@ -182,7 +170,7 @@
 
 <div class="form-group">
         <label class="control-label col-sm-2"> Where are you currently located? </label>
-                  <div class="form-inline"> 
+                  <div class="form-inline col-sm-9"> 
                     <select name="country" class=" form-control countries" id="countryId" style="width:145px;" required>
                         <option value="">Select Country</option>
                      </select>
@@ -198,17 +186,14 @@
 </div>
     <div class="form-group">
         <label class="control-label col-sm-2">About Company:</label>
-        <div class="col-sm-5">
+        <div class="col-sm-9">
             <textarea placeholder="Describe your company" class="form-control" rows="5" required onblur="validate('longtext','abouterror',this.value)"></textarea>
             <label class="error" id="abouterror"></label>
         </div>
     </div>
-    <div class="page-header"> </div>
-   <div class="form-group form-inline col-sm-10">
-   <label for="reg" class="control-label col-sm-5">Check for errors before submitting the form!</label>
-    <button class="btn btn-success" type="submit"  id="reg">Register</button>
-    <label for="reset" class="control-label"> </label>
-     <button class="btn btn-danger" type="reset" id="reset"> Reset </button>
+   <div class="form-group">
+                   <button class="btn btn-lg btn-primary btn-block" type="submit" id="reg" value="submit">Register</button>
+               </div>
 </div>
 </form>
 </div>

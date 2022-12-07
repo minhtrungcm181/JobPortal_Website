@@ -16,38 +16,19 @@
 </head>
 
 <body>
-  <nav class="navbar" id="insidenav">
-    <!-- <div class="container-fluid">
-      <div class="navbar-header">
-          <a class="navbar-brand" href="#">Job Portal</a>
-      </div> -->
-    <nav class="navbar navbar-expand-sm" style="background-color: aqua">
-      <div class="top-left-part">
-        <b>
-          <a href="/?page=home"><img src="images/logo_nav.png" alt="home" style="float:left;width:140px;padding-right: 10px;"></a>
-        </b>
-        <h1 style="color: white;"> BK Company LTC.</h1>
-      </div>
-
-    </nav>
+  <nav class="navbar"> 
     <ul class="nav navbar-nav">
-      <li class="active"><a  href="/?page=home">Home</a></li>
-      <!-- <li><a data-toggle="tab" href="#recent"">Recent Jobs</a></li> -->
+      <li><a href="?page=home"><img src="images/logo_nav.png" alt="home" style="height:20px ;"></a></li>
       <li><a href="#jobseeker">Job Seeker</a></li>
-      <li><a  href="/?page=company">Employer</a></li>
+      <li><a  href="?page=company">Employer</a></li>
       <li><a  href="#contact">Contact Us</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          <span class="glyphicon glyphicon-user"></span> Register <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="/?page=signup_js">Jobseeker</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="/?page=signup_emp">Employer</a></li>
-        </ul>
+      <li><a href="?page=signup_js">
+          <span class="glyphicon glyphicon-user"></span> Register</a>
       </li>
-      <li><a href="/?page=login">
+      <li><a href="?page=login">
           <span class="glyphicon glyphicon-log-in"></span> Login </a></li>
     </ul>
     </div>
@@ -86,11 +67,10 @@
   }
   ?>
 </body>
-<footer>
-  <div class="container bg-grey" id="contact">
-    <div class="page-header" style="background: white"></div>
+<footer class="page-footer">
+  <div class="container" id="contact">
     <h2 class="text-center">CONTACT US</h2>
-    <div class="page-header"></div>
+    <hr>
     <div class="row">
       <div class="col-sm-5">
         <p>Contact us and we'll get back to you within 24 hours.</p>
