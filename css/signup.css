@@ -1,49 +1,14 @@
-
-table.table {
-    background: transparent;
+.navbar{
+    background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+    background-image: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
+    margin-bottom: 0px!important;
 }
-
-td.tbold {
-    font-weight: bold;
-    width: 200px;
-}
-
-table {
-    background: transparent;
-    font-size: 16px;
-}
-
-label {
-    width: inherit;
-    background: transparent;
-}
-
-div.jumbotron {
-    color: #2aabd2;
-}
-
-.thumbnail {
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: 0;
-    background: transparent;
-
-}
-
-.thumbnail img {
-    display: block;
-    width: 300;
-    height: 300;
-    margin-bottom: 5px;
-}
-
 .signup-modal {
-    background-color: #fff;
+  background-color: #fff;
   border: 1px solid #e3e3e3;
   border-radius: 16px;
   box-sizing: border-box;
-  font-family: Source Sans Pro;
+  font-family: ubuntu;
   margin: auto;
   margin-top: 200px;
   padding: 48px;

@@ -96,13 +96,8 @@
                 <p>Search for Jobs</p>
                 <form class="form-inline" id="homesearch">
                     <input type="text" class="form-control" size="50" placeholder="Enter your search keyword" name="keyword" id="keyword">
-                    <button type="button" onclick="search()" class="btn btn-lg " style="color: black"><span class="glyphicon glyphicon-search"></span> Search</button>
+                    <button type="button" onclick="search()" class="btn btn-secondary "><span class="glyphicon glyphicon-search"></span></button>
                 </form>
-            </div>
-            </div>
-            <!-- jumbotron --
-<div class="container" id="subcontent" style="background: transparent">
-    div for search contents -->
             </div>
             <div class="container">
                 <div class="page-header">

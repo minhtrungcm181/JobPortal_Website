@@ -7,22 +7,15 @@
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <title>Job Seeker Registration</title>
        <link href="/css/signup.css" rel="stylesheet">
-       <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-       <!-- <link href="/css/main.css" rel="stylesheet"> -->
-
-
+       <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
    </head>
 
    <body>
-       <nav class="navbar navbar-expand-sm" style="background-color: aqua">
-           <div class="top-left-part">
-               <b>
-                   <a href="/?page=home"><img src="images/logo_nav.png" alt="home" style="float:left;width:140px;padding-right: 10px;"></a>
-               </b>
-               <h1 style="color: white;"> BK Company LTC.</h1>
-           </div>
-
-       </nav>
+   <nav class="navbar"> 
+        <ul class="nav navbar-nav">
+        <li><a href="/?page=home"><img src="/images/logo_nav.png" alt="home" style="height:20px;"></a></li>
+        </ul>
+   </nav>
        <div class="signup-modal">
            <form id="reguser" onsubmit="return checkForm()" METHOD="post" ACTION="process_user.php" enctype="multipart/form-data">
                <h1> Sign up </h1>
@@ -58,6 +51,11 @@
                Already have an account ?
                <a href="/?page=login"> Login</a>
            </p>
+           <hr>
+           <div class="text-center">
+           If you are an Employer, please
+            <a href="/?page=signup_emp" title="Employer Site">click here</a> to register.
+           </div>
        </div>
    </body>
    <script type="text/javascript" src="../js/validate.js"></script>
