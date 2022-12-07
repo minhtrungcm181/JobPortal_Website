@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> NEW CLIENT REGISTRATION </title>
 <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
-<link href="/css/employer.css" rel="stylesheet">
+<link href="../css/employer.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar"> 
@@ -168,7 +168,7 @@
         </div>
 </div>
 
-<div class="form-group">
+<!-- <div class="form-group">
         <label class="control-label col-sm-2"> Where are you currently located? </label>
                   <div class="form-inline col-sm-9"> 
                     <select name="country" class=" form-control countries" id="countryId" style="width:145px;" required>
@@ -183,7 +183,7 @@
                         <option value="">Select City</option> 
                      </select>
                   </div>
-</div>
+</div> -->
     <div class="form-group">
         <label class="control-label col-sm-2">About Company:</label>
         <div class="col-sm-9">

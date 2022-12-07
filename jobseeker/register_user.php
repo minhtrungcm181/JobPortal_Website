@@ -1,4 +1,4 @@
-   <!DOCTYPE HTML>
+<!DOCTYPE HTML>
    <html>
 
    <head>
@@ -6,47 +6,214 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <title>Job Seeker Registration</title>
-       <link href="/css/signup.css" rel="stylesheet">
-       <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+       <link href="../css/signup.css" rel="stylesheet">
+       <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/jobseeker.css" rel="stylesheet">
    </head>
 
    <body>
    <nav class="navbar"> 
         <ul class="nav navbar-nav">
-        <li><a href="/?page=home"><img src="/images/logo_nav.png" alt="home" style="height:20px;"></a></li>
+        <li><a href="?page=home"><img src="../images/logo_nav.png" alt="home" style="height:20px;"></a></li>
         </ul>
    </nav>
+   
        <div class="signup-modal">
-           <form id="reguser" onsubmit="return checkForm()" METHOD="post" ACTION="process_user.php" enctype="multipart/form-data">
-               <h1> Sign up </h1>
-               <div class="form-group row">
-                   <div class="col-md-6">
-                       <label for="firstname" class="col-6">First name</label>
-                       <input id="firstname" type="text" class="form-control" name="firstname" value="" autofocus="">
-                   </div>
-                   <div class="col-md-6">
-                       <label for="lastname" class="col-6">Last name</label>
-                       <input id="lastname" type="text" class="form-control" name="lastname" value="">
-                   </div>
-               </div>
-               <div class="form-group">
-                   <label for="email"> Email </label>
-                   <input type="email" name="useremail" placeholder="Your E-mail" class="form-control" id="email" required onblur="validate('email','emailerror',this.value)">
-               </div>
+       <FORM id="reguser" onsubmit="return checkForm()" METHOD="post" ACTION="process_user.php" enctype="multipart/form-data" class="form-horizontal">
+       <h1>Sign up for Job</h1>
+    <h3 class="h3style"> Your Login Detials </h3>
+    
 
-               <div class="form-group">
-                   <label for="passnew">Password</label>
-                   <input type="password" id="passnew" placeholder="New Password" name="pass1" class="form-control" required onblur="validate('password','passerror',this.value)">
-               </div>
+     <div class="form-group">
+        <label class="control-label col-sm-2" for="email" >Enter your Email ID:</label>
+        <div class="col-sm-4">
+             <input type="email" name="useremail" placeholder="Your E-mail" class="form-control" id="email" 
+                        required onblur="validate('email','emailerror',this.value)">
+        </div>
+        <label id="emailerror" class="error" ></label>
+     </div>  
 
-               <div class="form-group">
-                   <label for=" passconf">Confirm the Password</label>
-                   <input type="password" id="passconf" placeholder="Confirm Password" name="pass2" class="form-control" required>
-               </div>
-               <div class="form-group">
-                   <button class="btn btn-lg btn-primary btn-block" type="submit" id="reg" value="submit">Register</button>
-               </div>
-           </form>
+     <div class="form-group"> 
+         <label class="control-label col-sm-2 " for="passnew" > Create new Password:</label>
+         <div class="col-sm-4">  <input type="password" id="passnew" placeholder="New Password" name="pass1" class="form-control" 
+                      required onblur="validate('password','passerror',this.value)">
+         </div>
+        <label id="passerror" class="error"></label>
+    </div>
+
+    <div class="form-group">
+            <label class="control-label col-sm-2 for="passconf">Confirm the Password:</label>
+               <div class="col-sm-4">        
+                <input type="password" id="passconf" placeholder="Confirm Password" name="pass2" class="form-control" required>
+                   </div>
+                   <label class="error" id="passerror2"></label>
+            </div> 
+
+
+    <div class="page-header"></div>
+    <h3 class="h3style">Your Contact Information</h3>
+    
+
+
+   <div class="form-group">
+        <label class="control-label col-sm-3" for="name">Mention your Full Name:</label>
+                <div class="col-sm-4">
+                    <input type="text" id="name" placeholder="Your Name" name="uname" class="form-control" 
+                    required onblur="validate('username','nameerror',this.value)"> 
+                </div>
+         <label id="nameerror" class="error"></label>
+    </div>
+
+<!-- <div class="form-group">
+    <label class="control-label col-sm-3" for="location"> Where are you currently located? </label>
+        <div class="form-inline col-sm-7" id="location"> 
+                <select name="country" class=" form-control countries" id="countryId" style="width:145px;" required>
+                    <option value="">Select Country</option> -->
+                    <!-- <option value="Afghanistan">Afghanistan </option>
+                    <option value="Australia">Australia </option>
+                    <option value="Thailand">Thailand </option>
+                    <option value="America">America </option>
+                    <option value="England">England </option>
+                    <option value="Philipines">Philipines </option>
+                    <option value="Japan">Japan </option>
+                    <option value="China">China </option> -->
+                    
+                <!-- </select>
+                   
+                <select name="state" class="form-control states" id="stateId" style="width:145px;" required>
+                    <option value="">Select Province</option> -->
+                    <!-- <option value="An Giang">An Giang </option>
+                    <option value="Bac Ninh">Bac Ninh </option>
+                    <option value="Ba Ria - Vung Tau">Ba Ria - Vung Tau </option>
+                    <option value="Bac Kan">Bac Kan </option>
+                    <option value="Bac Lieu">Bac Lieu </option>
+                    <option value="Ben Tre">Ben Tre </option>
+                    <option value="Ca Mau">Ca Mau </option>
+                    <option value="Can Tho">Can Tho </option>
+                    <option value="Dong Nai">Dong Nai </option> -->
+                <!-- </select> 
+                    
+                <select name="city" class="form-control cities" id="cityId" style="width:145px;">
+                    <option value="">Select Area</option>  -->
+                    <!-- <option value="Tp Ca Mau">Tp Ca Mau </option>
+                    <option value="Huyen Cai Nuoc">Huyen Cai Nuoc </option>
+                    <option value="Huyen Dam Doi">Huyen Dam Doi </option>
+                    <option value="Huyen Nam Can ">Huyen Nam Can </option>
+                    <option value="Huyen Ngoc Hien">Huyen Ngoc Hien </option>
+                    <option value="Huyen Phu Tan">Huyen Phu Tan </option>
+                    <option value="Huyen Thoi Binh">Huyen Thoi Binh </option>
+                    <option value="Huyen Tran Van Thoi">Huyen Tran Van Thoi </option>
+                    <option value="Huyen U Minh">Huyen U Minh </option> -->
+                <!-- </select>
+        </div>
+</div> -->
+ <div class="form-group">
+     <label class="control-label col-sm-3" for="mobno">Enter your Mobile number:</label>
+                 <div class="col-sm-3"><input type="text" name="mobno" placeholder=" Mobile number" class="form-control" id="mobno" 
+                    required onblur="validate('mobilenum','mobnoerror',this.value)">
+                 </div>
+                  <label id="mobnoerror" class="error"></label>
+      </div>
+
+<div class="page-header"></div>    
+<h3 class="h3style"> Your Current Employment Details </h3> 
+
+
+<div class="form-group"> 
+    <label for="experience" class="control-label col-sm-4"> How much work experience do you have:</label>
+        <div class="col-sm-4">
+            <select name="experience" class="form-control" id="experience" required>
+                <option value="">select </option>
+                <option value="1">1 year </option>
+                <option value="2">2 year </option>
+                <option value="3">3 year </option>
+                <option value="4">4 year </option>
+                <option value="5">5 year </option>
+                <option value="6">6 year </option>
+                <option value="7">7 year </option>
+                <option value="8">8 year </option>
+                <option value="9+">9+ year </option>
+         </select>
+    </div>
+</div>
+
+<div class="form-group"> 
+    <label class="control-label col-sm-4" for="skills"> What are your Key Skills:</label>
+        <div class="col-sm-4"><input type="text" name="skills" placeholder="skills" class="form-control" name="skills" id="skills"
+                                     required onblur="validate('text','skillerror',this.value)">
+        </div>
+        <label id="skillerror" class="error"></label>
+</div>
+
+
+<div class="page-header"></div>
+<h3 class="h3style"> Your Educational Qualifications </h3>
+
+
+<div class="form-group"> 
+    <label class="control-label col-sm-2" for="ugcourse"> Your Basic Education: </label>
+     <div class="col-sm-4"> <select name="ugcourse" id="ugcourse" class=" form-control" required>
+                <option value="" label="Select">Select</option>
+                <option value="Not Pursuing Graduation"> Not Pursuing Graduation</option>
+                <option value="B.A">B.A</option>
+                <option value="B.Arch">B.Arch</option>
+                <option value="BCA">BCA</option>
+                <option value="B.B.A">B.B.A</option>
+                <option value="B.Com">B.Com</option>
+                <option value="B.Ed">B.Ed</option>
+                <option value="BDS">BDS</option>
+                <option value="BHM">BHM</option>
+                <option value="B.Pharma">B.Pharma</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="B.Tech/B.E.">B.Tech/B.E.</option>
+                <option value="LLB">LLB</option>
+                <option value="MBBS">MBBS</option>
+                <option value="Diploma">Diploma</option>
+                <option value="BVSC">BVSC</option>
+                <option value="Other">Other</option>
+                </select>
+        </div>
+ </div>
+ <div class="form-group"> 
+    <label class="control-label col-sm-2" for="pgcourse"> Your Masters Education:</label>
+        <div class="col-sm-4"> <select name="pgcourse" id="pgcourse"  class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Not Pursuing Post Graduation"> Not Post Pursuing Graduation</option>
+                                <option value="CA">CA</option>
+                                <option value="CS">CS</option>
+                                <option value="ICWA (CMA)">ICWA (CMA)</option>
+                                <option value="Integrated PG">Integrated PG</option>
+                                <option value="LLM">LLM</option>
+                                <option value="M.A">M.A</option>
+                                <option value="M.Arch">M.Arch</option>
+                                <option value="M.Com">M.Com</option>
+                                <option value="M.Ed">M.Ed</option>
+                                <option value="M.Pharma">M.Pharma</option>
+                                <option value="M.Sc">M.Sc</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="MBA/PGDM">MBA/PGDM</option>
+                                <option value="MCA">MCA</option>
+                                <option value="MS">MS</option>
+                                <option value="PG Diploma">PG Diploma</option>
+                                <option value="MVSC">MVSC</option>
+                                <option value="MCM">MCM</option>
+                                <option value="Other">Other</option>
+                            </select>
+          
+</div>
+
+<div class="page-header"> </div>
+
+        <div class="form-group form-inline col-sm-10">
+
+        <button class="btn btn-success" type="submit"  id="reg" value="submit">Register</button>
+        <label class="col-sm-2"></label>
+        <button class="btn btn-danger" type="reset" id="reset"> Reset </button>
+
+</div>
+
+    </form>
            <p class="text-center">
                Already have an account ?
                <a href="/?page=login"> Login</a>
@@ -56,7 +223,8 @@
            If you are an Employer, please
             <a href="/?page=signup_emp" title="Employer Site">click here</a> to register.
            </div>
-       </div>
+       
+   </div>
    </body>
    <script type="text/javascript" src="../js/validate.js"></script>
    <script src="../js/jquery-1.12.0.min.js"></script>

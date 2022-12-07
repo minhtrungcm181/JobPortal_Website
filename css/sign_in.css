@@ -2,10 +2,11 @@ body {
   padding-bottom: 40px;
   background: url("paper.png");
 }
-.navbar{
-  background: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
-  background-image: linear-gradient(270deg, rgb(0, 90, 255) 0%, rgb(0, 23, 68) 100%);
-  margin-bottom: 0px!important;
+footer{
+  display: none;
+}
+nav ul.nav{
+  display: none;
 }
 .form-signin {
   max-width: 330px;
@@ -27,6 +28,41 @@ body {
           box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+li.active{
+  background: #5bc0de;
+}
+#subcontent{
+  background: lavender;
+  color: black;
+  font-size: 13px;
+}
+div.askreg :hover{
+  background: whitesmoke;
+}
+
+div.askreg p{
+  font-family: ubuntu;
+  color: #222222;
+  font-size: 16px;
+}
+div.askreg h2{
+  font-family: Georgia;
+  color: green;
+
 }
 .login-modal{
   background-color: #fff;

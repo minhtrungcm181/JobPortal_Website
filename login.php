@@ -4,7 +4,7 @@
 <head>
     <link href="css/login.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <title>Sign in</title>
+    <title>Signin</title>
     <?php
     if (isset($_GET['msg']) && ($_GET['msg'] == "failed")) {
     ?>
@@ -27,12 +27,17 @@
     }
     ?>
 </head>
+
 <body>
-<nav class="navbar"> 
-        <ul class="nav navbar-nav">
-        <li><a href="/?page=home"><img src="/images/logo_nav.png" alt="home" style="height:20px;"></a></li>
-        </ul>
-   </nav>
+    <nav class="navbar navbar-expand-sm" style="background-color: aqua">
+        <div class="top-left-part">
+            <b>
+                <a href="/?page=home"><img src="images/logo_nav.png" alt="home" style="float:left;width:140px;padding-right: 10px;"></a>
+            </b>
+            <h1 style="color: white;"> BK Company LTC.</h1>
+        </div>
+
+    </nav>
     <div class="login-modal">
         <form class="form-signin" action="process_login.php" method="post">
             <h1 class="form-signin-heading">Sign in</h1>
@@ -51,7 +56,14 @@
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
         <p class="text-center">Need an account?
-        <a href="/?page=signup_js"> Register Now</a>
+        <div class="dropdown text-center "><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-user"></span> Sign Up <span class="caret"></span></a>
+            <div class="dropdown-menu pull-right">
+                <li><a href="/?page=signup_js">Jobseeker</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/?page=signup_emp">Employer</a></li>
+            </div>
+        </div>
         </p>
     </div>
 </body>
