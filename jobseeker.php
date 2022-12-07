@@ -6,12 +6,12 @@
       <table id="products_table" class="table table-info table-stripe table-hover table-bordered">                     
             <thead class="thead-dark">
                 <tr>
-                  <th>ID</th>
                   <th>Name</th>
-                  <th>Type</th>
-                  <th>Industry</th>
                   <th>Location</th>
-                  <th>Profile</th>
+                  <th>Experience</th>
+                  <th>Skill</th>
+                  <th>Basic Education</th>
+                  <th>Advanced Education</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,7 @@
 
             $con = mysqli_connect($host, $user, $password, $db_name);
 
-            $sql = "select *from employer";  
+            $sql = "select *from jobseeker";  
             $result = mysqli_query($con, $sql);  
             //$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $count = mysqli_num_rows($result);
@@ -32,17 +32,16 @@
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                     echo '<tr>
-                              <td scope="row">' . $row["eid"]. '</td>
-                              <td>' . $row["ename"] .'</td>
-                              <td> '.$row["etype"] .'</td>
-                                <td> '.$row["industry"] .'</td>
-                              <td> '.$row["location"] .'</td>
-                              <td> '.$row["profile"] .'</td>
+                              <td scope="row">' . $row["name"]. '</td>
+                              <td>' . $row["location"] .'</td>
+                              <td> '.$row["experience"] .'</td>
+                                <td> '.$row["skills"] .'</td>
+                              <td> '.$row["basic_edu"] .'</td>
+                              <td> '.$row["master_edu"] .'</td>
                             </tr>';
                 }
             }
             else {
-                //echo "0 results";
             } 
           ?>
            </tbody>

@@ -14,6 +14,19 @@
 <link href="css/home_page.css" rel="stylesheet">
 <link href="css/timeline.css" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+<!--Add table sorting -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<link href="css/addons/datatables.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/addons/datatables.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -34,8 +47,8 @@
     <ul class="nav navbar-nav">
       <li class="active"><a  href="?page=home">Home</a></li>
       <!-- <li><a data-toggle="tab" href="#recent"">Recent Jobs</a></li> -->
-      <li><a href="#jobseeker">Job Seeker</a></li>
-      <li><a  href="?page=company">Employer</a></li>
+      <li><a href="?page=jobseeker">Job Seekers</a></li>
+      <li><a  href="?page=company">Employers</a></li>
       <li><a  href="#contact">Contact Us</a></li>
     </ul>
 
@@ -65,12 +78,26 @@
 
   else if (isset($_GET['page']) && $_GET['page'] == 'login')
   {  header("location:login.php");}
+
   else if (isset($_GET['page']) && $_GET['page'] == 'company')
-  { include("companies.php");}
+  {
+    echo '<div class="container bg-grey" id="company">';
+    include("companies.php");
+    echo '</div>';
+  }
+
   else if (isset($_GET['page']) && $_GET['page'] == 'logout')
   { include("logout.php");}
+
   else if (isset($_GET['page']) && $_GET['page'] == 'search')
   { include("search.php");}
+
+  else if (isset($_GET['page']) && $_GET['page'] == 'jobseeker')
+  { 
+    echo '<div class="container bg-grey" id="jobseeker">';
+    include("jobseeker.php");
+    echo '</div>';
+  }
 
   else {
       include("home.php");
