@@ -12,6 +12,7 @@
   <title> Job Portal </title>
 <link href="/css/home_page.css" rel="stylesheet">
 <link href="/css/timeline.css" rel="stylesheet">
+<link href="/css/companies.css" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 </head>
 
@@ -66,8 +67,8 @@
     include "home.php";
   }
   ?>
-</body>
-<footer class="page-footer">
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<footer class="footer">
   <div class="container" id="contact">
     <h2 class="text-center">CONTACT US</h2>
     <hr>
@@ -85,8 +86,9 @@
         </div>
       </div>
     </div>
-  </div> <!-- Contact -->
+  </div>
 </footer>
+</body>
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/search.js"></script>
 <script src="js/bootstrap.min.js"></script>
