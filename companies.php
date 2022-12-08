@@ -3,7 +3,8 @@
   </head>
   <body>
     <div class="table-responsive">
-      <table id="company_table" class="table table-info table-stripe table-hover table-bordered table-sortable">                     
+      <table id="company_table" class="table table-info table-stripe table-hover table-bordered"> <!-- Sortable ver1 -->
+      <!--<table id="company_table" class="table table-info table-stripe table-hover table-bordered table-sortable">  <!-- Sortable ver2 -->                 
             <thead class="thead-dark">
                 <tr>
                   <th>ID</th>
@@ -50,7 +51,8 @@
     </div>
 
     <script>
-    $("company_table").tableSortable();
+    $('#company_table').DataTable(); //1st version
+    //$("company_table").tableSortable(); //2nd version
     </script>
 
   </body>

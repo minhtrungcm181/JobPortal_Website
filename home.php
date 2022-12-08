@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title> Job Portal </title>
+
+    <!-- Comment these to access 1st version of sortable -->
+    <!--
     <script type="application/javascript">
         $(document).ready(function() {
             // Add smooth scrolling to all links in navbar + footer link
@@ -44,6 +47,8 @@
             });
         })
     </script>
+    -->
+    <!-- Comment these to access 1st version of sortable -->
 </head>
 <body>
 

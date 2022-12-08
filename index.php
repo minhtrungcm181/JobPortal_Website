@@ -15,7 +15,7 @@
 <link href="css/timeline.css" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
-<!--Add table sorting
+<!--Add table sorting first version-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -24,7 +24,7 @@
 <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 <link href="css/addons/datatables.min.css" rel="stylesheet">
 <script type="text/javascript" src="js/addons/datatables.min.js"></script>
--->
+
 
 
 
@@ -131,5 +131,5 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/search.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.tableSorter.js"></script> <!--Add table sorting here-->
+<!--<script src="js/jquery.tableSorter.js"></script>--> <!--Add table sorting second version-->
 </html>
