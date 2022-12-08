@@ -8,7 +8,6 @@
             <thead class="thead-dark">
                 <tr>
                   <th>Name</th>
-                  <th>Location</th>
                   <th>Experience</th>
                   <th>Skill</th>
                   <th>Basic Education</th>
@@ -34,7 +33,6 @@
                 while($row = $result->fetch_assoc()) {
                     echo '<tr>
                               <td scope="row">' . $row["name"]. '</td>
-                              <td>' . $row["location"] .'</td>
                               <td> '.$row["experience"] .'</td>
                                 <td> '.$row["skills"] .'</td>
                               <td> '.$row["basic_edu"] .'</td>

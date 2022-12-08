@@ -3,15 +3,16 @@
   </head>
   <body>
     <div class="table-responsive">
-      <table id="company_table" class="table table-info table-stripe table-hover table-bordered"> <!-- Sortable ver1 -->
-      <!--<table id="company_table" class="table table-info table-stripe table-hover table-bordered table-sortable">  <!-- Sortable ver2 -->                 
+      <table id="job_table" class="table table-info table-stripe table-hover table-bordered"> <!-- Sortable ver1 -->
+      <!--<table id="job_table" class="table table-info table-stripe table-hover table-bordered table-sortable">  <!-- Sortable ver2 -->                 
             <thead class="thead-dark">
                 <tr>
                   <th>ID</th>
-                  <th>Name</th>
-                  <th>Type</th>
-                  <th>Industry</th>
-                  <th>Profile</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Vacation</th>
+                  <th>Pay</th>
+                  <th>Post date</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +25,7 @@
 
             $con = mysqli_connect($host, $user, $password, $db_name);
 
-            $sql = "select *from employer";  
+            $sql = "select *from jobs";  
             $result = mysqli_query($con, $sql);  
             //$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $count = mysqli_num_rows($result);
@@ -33,10 +34,11 @@
                 while($row = $result->fetch_assoc()) {
                     echo '<tr>
                               <td scope="row">' . $row["eid"]. '</td>
-                              <td>' . $row["ename"] .'</td>
-                              <td> '.$row["etype"] .'</td>
-                                <td> '.$row["industry"] .'</td>
-                              <td> '.$row["profile"] .'</td>
+                              <td>' . $row["title"] .'</td>
+                              <td> '.$row["jobdesc"] .'</td>
+                                <td> '.$row["vacno"] .'</td>
+                              <td> '.$row["basicpay"] .'</td>
+                              <td> '.$row["postdate"] .'</td>
                             </tr>';
                 }
             }
@@ -49,8 +51,8 @@
     </div>
 
     <script>
-    $('#company_table').DataTable(); //1st version
-    //$("company_table").tableSortable(); //2nd version
+    $('#job_table').DataTable(); //1st version
+    //$("job_table").tableSortable(); //2nd version
     </script>
 
   </body>

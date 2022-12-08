@@ -50,6 +50,7 @@
       <!-- <li><a data-toggle="tab" href="#recent"">Recent Jobs</a></li> -->
       <li><a href="/?page=jobseeker">Job Seekers</a></li>
       <li><a  href="/?page=company">Employers</a></li>
+      <li><a  href="/?page=jobs">Jobs</a></li>
       <li><a  href="#contact">Contact Us</a></li>
     </ul>
 
@@ -98,6 +99,13 @@
   { 
     echo '<div class="container bg-grey" id="jobseeker">';
     include("jobseeker.php");
+    echo '</div>';
+  }
+
+  else if (isset($_GET['page']) && $_GET['page'] == 'jobs')
+  { 
+    echo '<div class="container bg-grey" id="jobseeker">';
+    include("jobs.php");
     echo '</div>';
   }
 
