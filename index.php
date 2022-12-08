@@ -117,7 +117,7 @@
         <p>Contact us and we'll get back to you within 24 hours.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh City, Viet Nam</p>
         <p><span class="glyphicon glyphicon-phone"></span> +84926268595</p>
-        <a href="#"><span class="glyphicon glyphicon-home" href="https://www.facebook.com/trinh.buller"></span> facebook/trinh.buller</a>
+        <a href="https://www.facebook.com/trinh.buller"><span class="glyphicon glyphicon-home" href="https://www.facebook.com/trinh.buller"></span> facebook/trinh.buller</a>
       </div>
 
       <div class="col-sm-7">
