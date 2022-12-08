@@ -117,7 +117,7 @@
         <p>Contact us and we'll get back to you within 24 hours.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh City, Viet Nam</p>
         <p><span class="glyphicon glyphicon-phone"></span> +84926268595</p>
-        <p href="#"><span class="glyphicon glyphicon-home" href="https://www.facebook.com/trinh.buller"></span> facebook/trinh.buller</p>
+        <a href="#"><span class="glyphicon glyphicon-home" href="https://www.facebook.com/trinh.buller"></span> facebook/trinh.buller</a>
       </div>
 
       <div class="col-sm-7">
@@ -131,5 +131,5 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/search.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.tableSorter.js"></script>
+<script src="js/jquery.tableSorter.js"></script> <!--Add table sorting here-->
 </html>
