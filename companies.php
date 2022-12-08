@@ -3,7 +3,7 @@
   </head>
   <body>
     <div class="table-responsive">
-      <table id="products_table" class="table table-info table-stripe table-hover table-bordered">                     
+      <table id="company_table" class="table table-info table-stripe table-hover table-bordered table-sortable">                     
             <thead class="thead-dark">
                 <tr>
                   <th>ID</th>
@@ -50,7 +50,7 @@
     </div>
 
     <script>
-    $('#products_table').DataTable();
+    $("company_table").tableSortable();
     </script>
 
   </body>

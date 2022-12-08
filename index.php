@@ -15,7 +15,7 @@
 <link href="css/timeline.css" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
-<!--Add table sorting -->
+<!--Add table sorting
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -24,6 +24,7 @@
 <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 <link href="css/addons/datatables.min.css" rel="stylesheet">
 <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+-->
 
 
 
@@ -47,8 +48,8 @@
     <ul class="nav navbar-nav">
       <li class="active"><a  href="?page=home">Home</a></li>
       <!-- <li><a data-toggle="tab" href="#recent"">Recent Jobs</a></li> -->
-      <li><a href="?page=jobseeker">Job Seekers</a></li>
-      <li><a  href="?page=company">Employers</a></li>
+      <li><a href="/?page=jobseeker">Job Seekers</a></li>
+      <li><a  href="/?page=company">Employers</a></li>
       <li><a  href="#contact">Contact Us</a></li>
     </ul>
 
@@ -66,7 +67,8 @@
     </ul>
     </div>
   </nav>
-  <?php
+
+<?php
   if (isset($_GET['page']) && $_GET['page'] == 'home')
   { include("home.php");}
 
@@ -103,6 +105,7 @@
       include("home.php");
     }
   ?>
+
 </body>
 <footer>
   <div class="container bg-grey" id="contact">
@@ -128,4 +131,5 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/search.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.tableSorter.js"></script>
 </html>
