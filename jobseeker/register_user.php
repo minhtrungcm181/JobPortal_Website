@@ -15,7 +15,7 @@
    <body>
    <nav class="navbar"> 
         <ul class="nav navbar-nav">
-        <li><a href="?page=home"><img src="../images/logo_nav.png" alt="home" style="height:20px;"></a></li>
+        <li><a href="/?page=home"><img src="../images/logo_nav.png" alt="home" style="height:20px;"></a></li>
         </ul>
    </nav>
    
