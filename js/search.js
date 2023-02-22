@@ -1,6 +1,4 @@
-/**
- * Created by Sreelal on 12-04-2016.
- */
+
 
     function search() {
         var keyword=document.getElementById("keyword").value;
@@ -16,9 +14,9 @@
                 document.getElementById("subcontent").innerHTML = "Searching..";
             } else if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 document.getElementById("subcontent").innerHTML = xmlhttp.responseText;
-            } else {
-                document.getElementById("subcontent").innerHTML = "Error Occurred. <a href='index.php'>Reload Or Try Again</a> the page.";
-            }
+            // } else {
+            //     document.getElementById("subcontent").innerHTML = "Error Occurred. <a href='index.php'>Reload Or Try Again</a> the page.";
+            // }
         }
         xmlhttp.open("GET", "home_search.php?key=" + keyword , true);
         xmlhttp.send();

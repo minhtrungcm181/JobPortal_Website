@@ -90,4 +90,3 @@ $query=mysqli_query($db1,"select * from jobs where eid = $_GET[eid]");
 <script src="../js/jquery-1.12.0.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 </html>
-

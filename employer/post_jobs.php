@@ -1,22 +1,5 @@
 <?php
-/**
- * Online-Job-Portal - A web application built on PHP HTML & javascript
-Copyright (C) 2016 Sreelal C
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
- */
 include_once('../config.php');
 session_start();
 if(!isset($_SESSION['eid'])){
@@ -30,28 +13,7 @@ if(!isset($_SESSION['eid'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Post Jobs </title>
-         <script>
-             function checkForm() {
-// Fetching values from all input fields and storing them in variables.
-var desig = document.getElementById("deser").innerHTML;
-var vacancy = document.getElementById("vacer").innerHTML;
-var desc = document.getElementById("jober").innerHTML;
-var fnarea = document.getElementById("fner").innerHTML;
-var profile = document.getElementById("proer").innerHTML;
-var pay = document.getElementById("payer").innerHTML;
-//Check input Fields Should not be blanks.
-
-if(desig == '' && vacancy == '' && desc == '' &&  fnarea =='' && profile=='' && pay=='') {
-   return true;
-
-}
-else {
-alert("Fill in with correct information");
-    return false;
-
-}
-        }
- </script>
+         
     </head>
     <body>
 
@@ -59,7 +21,7 @@ alert("Fill in with correct information");
         <nav>
             <div class="navbar" id="insidenav">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Job Portal</a>
+                    <a class="navbar-brand" href="../?page=home">Job Portal</a>
                 </div>
 
                 <ul class="nav navbar-nav">
@@ -148,7 +110,7 @@ alert("Fill in with correct information");
                 <label for="pay-div" class="control-label col-sm-2">Basic Pay:</label>
                   <div class="col-sm-4" id="pay-div">
                          <select class="form-control" id="money" name="money"> 
-                           <option value="Rs"> Rs </option>
+                           <option value="VND"> VND </option>
                            <option value="USD"> USD </option>
                            </select>
                         <input type="text" class="form-control" id="pay" name="pay" required onblur="validate('digit','payer',this.value)">
@@ -162,7 +124,7 @@ alert("Fill in with correct information");
                  <label class="error" id="fner"></label>
                
             </div>
-            <div class="form-group form-inline">
+            <!-- <div class="form-group form-inline">
                 <label for="location" class="control-label col-sm-2">Location:</label>
                 <div class="col-sm-6">   
                     <select name="country" class=" form-control countries" id="countryId"  required>
@@ -175,7 +137,7 @@ alert("Fill in with correct information");
                         <option value="">Select City</option> 
                     </select>
             </div> 
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="indtype" class="control-label col-sm-2">Industry:</label>
                 <div class="col-sm-5">
@@ -308,8 +270,30 @@ alert("Fill in with correct information");
  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
  <link href="../css/main.css" rel="stylesheet">
  <link href="../css/employer.css" rel="stylesheet">
- <script type="text/javascript" src="../js/validate.js"></script>
+ <!-- <script type="text/javascript" src="../js/validate.js"></script> -->
  <script src="../js/jquery-1.12.0.min.js"></script>
  <script src="../js/bootstrap.min.js"></script>
- <script src="../location/location.js"></script>
+ <!-- <script src="../location/location.js"></script> -->
+ <script>
+//              function checkForm() {
+// // Fetching values from all input fields and storing them in variables.
+// var desig = document.getElementById("deser").innerHTML;
+// var vacancy = document.getElementById("vacer").innerHTML;
+// var desc = document.getElementById("jober").innerHTML;
+// var fnarea = document.getElementById("fner").innerHTML;
+// var profile = document.getElementById("proer").innerHTML;
+// var pay = document.getElementById("payer").innerHTML;
+// //Check input Fields Should not be blanks.
+
+// if(desig == '' && vacancy == '' && desc == '' &&  fnarea =='' && profile=='' && pay=='') {
+//    return true;
+
+// }
+// else {
+// alert("Fill in with correct information");
+//     return false;
+
+// }
+//         }
+//  </script>
 </html>

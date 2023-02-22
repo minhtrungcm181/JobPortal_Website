@@ -1,28 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sreelal
- * Date: 07-04-2016
- * Time: 10:15 PM
- * Online-Job-Portal - A web application built on PHP HTML & javascript
-Copyright (C) 2016 Sreelal C
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
- */
 include_once("config.php");
-$keyword= $_GET['key'];
+$keyword= $_GET['keyword'];
 if($keyword==""){
     echo " <div class='alert alert-danger alert-dismissible' role='alert'>
             <button type='button' class='close'  data-dismiss='alert' aria-label='Close'><span
@@ -47,12 +26,22 @@ else {
 ?>
 
 <html>
-<div class="table-responsive">
-<table class="table table-striped">
-    <th>Company</th>
+  <head>
+  </head>
+  <body>
+    <div class="table-responsive">
+      <table id="company_table" class="table table-info table-stripe table-hover table-bordered"> <!-- Sortable ver1 -->
+      <!--<table id="company_table" class="table table-info table-stripe table-hover table-bordered table-sortable">  <!-- Sortable ver2 -->                 
+            <thead class="thead-dark">
+                <tr>
+                <th>Company</th>
     <th>Position</th>
     <th>Post Date</th>
     <th>Candidate Profile</th>
+                </tr>
+            </thead>
+            <tbody>
+            
     <?php
     echo "<h3 style='color:green'> Search Results Matching :" . $keyword . "</h3> ";
 
@@ -63,13 +52,21 @@ else {
         echo "<td>" . $row['ename'] . "</td>";
         echo "<td>" . $row['title'] . "</td>";
         echo "<td>" . $row['postdate'] . "</td>";
-        echo "<td>" . substr($row['jprofile'],0,120) . "......</td>";  
+        echo "<td>" . substr($row['profile'],0,120) . "......</td>";  
         echo "</tr>";
     }
     echo "<h4> <a href='login.php'>Login to view more</a> </h4>";
     }
 
     }     ?>
-</table>
- </div>
+           </tbody>
+      </table>
+    </div>
+
+    <script>
+    $('#company_table').DataTable(); //1st version
+    //$("company_table").tableSortable(); //2nd version
+    </script>
+
+  </body>
 </html>
